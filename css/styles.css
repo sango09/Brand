@@ -1,0 +1,175 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+/* ------------------ Variables */
+:root{
+--green-color:#7ACC2D;
+--white-color: white;
+--black-color: #313337;
+
+/* Tipografia */
+--normal:12px;
+
+/* Espaciado */
+--space: 10px;
+--space-max: 100px;
+
+/* Box shadow */
+--box: 0px 0 2px 1px #e6e5e9;
+
+}
+/* ----------------- Variables */
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+  nav ul{
+    display: flex;
+  }
+
+  nav li{
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  nav li a{
+    color:var(--black-color);
+    text-decoration: none;
+  }
+
+    nav li a:hover{
+      color:var(--white-color);
+    }
+
+
+/* Main section */
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+
+}
+
+.products{
+  background-image: url("../img/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding:20%;
+  display: flex;
+
+}
+
+.product{
+  padding: var(--space);
+  margin-top: -240px;
+}
+
+  .product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+  }
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: 17px;
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+  .main_button:hover{
+    background-color: #5e9e22;
+    
+  }
+
+
+/* Productos digitales */
+ 
+.products_digital{
+  display: flex; 
+  padding: var(--space);
+}
+
+
+.digital{
+  padding: var(--space-max);
+}
+
+  .digital .content{
+    background-color: var(--white-color);
+    padding: 15%;
+  }
+
+  .digital .img_content img{
+    height: 100px;
+  }
+
+
+
+.content h3{
+  font-size: 17px;
+  color: var(--black-color);
+}
+
+
+/* Menciones */
+
+.main_mentions{
+  padding: var(--space);
+  text-align: center;
+  color: var(--black-color);
+  font-size: 17px;
+}
+
+.list_mentions{
+  display: flex;
+  padding: 5%;
+}
+
+.mention{
+  margin: var(--space);
+  margin-top: -50px;
+  color: var(--black-color);
+  
+}
+
+  .mention .content{
+    background-color: var(--white-color);
+    padding: 0;
+    box-shadow: 0 3px 6px #00000029;
+  }
+
+  .mention .img_content img{
+    width: 100%;
+  }
