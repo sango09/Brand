@@ -1,0 +1,39 @@
+@media (max-width: 600px){
+
+    /* Products */
+
+    .products{
+        display: inherit;
+        height: auto;
+    }
+
+        .product{
+            margin-top: auto;
+        }
+
+    .main_section{
+        padding: 4%;
+    }
+
+
+    /* Digital Products */
+
+    .products_digital , .list_mentions{
+        display: inherit;
+    }
+
+        .digital{
+            padding: 0;
+        }
+        
+    /* Mentions */
+    .mention{
+        padding: 4%;
+        margin-top: 0;
+    }
+
+        .mention .content{
+            padding: 4%;
+        }
+
+}

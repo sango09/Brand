@@ -4,51 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Brand</title>
+
+    <!-- Estilos css -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="img/ben1.png">
+
 </head>
 
 <body>
     <!-- Inicio de nav bar -->
-    <nav>
+    <nav class="fadeInDown">
         <div class="brand_image">
             <img src="img/logo.png" alt="">
         </div>
         <div class="nav_options">
             <ul>
+
                 <li><a href="#">FAQs</a></li>
-                <li><a href="#">Productos y descripción</a></li>
+                <li><a href="product.html">Productos y descripción</a></li>
+                <li><a href="index.html">Inicio</a></li>
             </ul>
         </div>
     </nav>
     <!-- Fin del nav bar -->
 
     <!-- Inicio de main section -->
-    <div class="main_section">
+    <div class="main_section fadeIn">
         <h1>
             Este es un producto increible, no se que haces viendo que lo puedes tener.
         </h1>
     </div>
     <div class="products">
 
-        <div class="product">
+        <div class="product fadeInUp">
             <div class="content">
                 <div class="img_content">
                     <img src="img/box1.png" alt="">
                 </div>
                 <h1>Producto 1</h1>
                 <p>Miles de productos hay en el mercado,pero nada como una caja con gatitos</p>
-                <button href="#" class="main_button">Lo quiero</button>
+                <form action="venta.html">
+                    <input type="submit" class="main_button" name="submit" value="Lo quiero">
+                </form>
             </div>
         </div>
 
-        <div class="product">
+        <div class="product fadeInUp">
             <div class="content">
                 <div class="img_content">
                     <img src="img/box2.png" alt="">
                 </div>
                 <h1>Producto 2</h1>
                 <p>Miles de productos hay en el mercado,pero nada como una caja con gatitos</p>
-                <button href="#" class="main_button">Lo quiero</button>
+                <form action="venta.html">
+                    <input type="submit" class="main_button" name="submit" value="Lo quiero">
+                </form>
             </div>
         </div>
     </div>
@@ -138,6 +151,13 @@
         </div>
     </div>
     <!-- Fin de menciones -->
+
+    <!-- Inicio de footer -->
+    <footer>
+        <div class="option">Terminos y condiciones</div>
+        <div class="option contact"><a href="mailto:contacto@brand.com">contacto@brand.com</a></div>
+    </footer>
+    <!-- Fin de footer -->
 
 </body>
 

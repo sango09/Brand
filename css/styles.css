@@ -32,15 +32,26 @@
 html,body{
   padding: 0px;
   margin: 0px;
-  font-size: var(--normal);
+  color: var(--black-color);
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
+
+p, label{
+  font-size: var(--normal);
+}
+
+h3{
+  font-size: 17px;
+}
+
 
 nav{
   display: flex;
   background-color: var(--green-color);
   padding: var(--space);
   color: var(--white-color);
+
   justify-content: space-between;
   align-items: center;
 }
@@ -55,8 +66,8 @@ nav{
   }
 
   nav li a{
-    color:var(--black-color);
     text-decoration: none;
+    color: var(--black-color);
   }
 
     nav li a:hover{
@@ -64,7 +75,7 @@ nav{
     }
 
 
-/* Main section */
+/*---------------Main section */
 
 .main_section{
   padding: 15%;
@@ -74,7 +85,6 @@ nav{
 
 .products{
   background-image: url("../img/curve.png");
-  max-height: 50px;
   background-size: cover;
   background-position: center top;
   padding:20%;
@@ -101,7 +111,6 @@ nav{
   background-color: var(--green-color);
   width: 100%;
   padding: var(--space);
-  font-size: 17px;
   color: var(--white-color);
   border: 0;
   cursor: pointer;
@@ -114,7 +123,7 @@ nav{
   }
 
 
-/* Productos digitales */
+/*----------Productos digitales */
  
 .products_digital{
   display: flex; 
@@ -136,20 +145,10 @@ nav{
   }
 
 
-
-.content h3{
-  font-size: 17px;
-  color: var(--black-color);
-}
-
-
-/* Menciones */
-
+/*------------ Menciones */
 .main_mentions{
   padding: var(--space);
   text-align: center;
-  color: var(--black-color);
-  font-size: 17px;
 }
 
 .list_mentions{
@@ -160,16 +159,67 @@ nav{
 .mention{
   margin: var(--space);
   margin-top: -50px;
-  color: var(--black-color);
-  
 }
 
   .mention .content{
     background-color: var(--white-color);
-    padding: 0;
+    padding: var(--space);
     box-shadow: 0 3px 6px #00000029;
   }
 
   .mention .img_content img{
     width: 100%;
   }
+
+/* Tablas */
+.main_container h1{
+    padding: 10%;
+    padding-bottom: 10%;
+}
+
+#product img{
+    height: 50%;
+    margin-top: -40px;
+}
+
+/*---------------- Venta */
+.modulo_pago{
+  background: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+  max-width: 80%
+}
+
+.modulo_pago_images{
+  text-align: center;
+  
+}
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+}
+
+.modulo_pago .main_button{
+  margin-top: 10px;
+  
+}
+
+/*---------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+.contact a{
+  color: var(--green-color);
+  text-decoration: none;
+}
+
